@@ -79,6 +79,7 @@ public class WaterDropListViewHeader extends FrameLayout {
 		});
 
     }
+
     /**
      * 修改状态。注：状态的改变与前一个状态以及下拉头高度有关
      *

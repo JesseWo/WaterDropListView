@@ -10,7 +10,6 @@ package medusa.theone.waterdroplistview.view;
 
 import android.content.Context;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
@@ -291,7 +290,7 @@ public class WaterDropListView extends ListView implements OnScrollListener,Wate
 		default:
 			mLastY = -1; // reset
 			isTouchingScreen = false;
-			//TODO 存在bug：当两个if的条件都满足的时候，只能滚动一个，所以在reSetHeader的时候就不起作用了，一般就只会reSetFooter
+			//TODO 存在bug：当两个if的条件都满足的时候，只能滚动一个，所以在resetHeader的时候就不起作用了，一般就只会resetFooter
 			if (getFirstVisiblePosition() == 0) {
 				resetHeaderHeight();
 			}
